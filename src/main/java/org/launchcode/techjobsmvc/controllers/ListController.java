@@ -57,6 +57,7 @@ public class ListController {
             model.addAttribute("title", "Jobs with " + columnChoices.get(column) + ": " + value);
         }
         model.addAttribute("jobs", jobs);
+        model.addAttribute("columns", columnChoices);
 
         return "list-jobs";
     }
