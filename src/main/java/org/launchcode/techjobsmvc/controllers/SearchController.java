@@ -37,7 +37,7 @@ public class SearchController {
             jobs = JobData.findByValue(searchTerm);
             model.addAttribute("title", "Jobs with " + searchTerm);
         }
-        else if(searchType.equals("all") && searchTerm.isEmpty()){
+        else if(searchType.equals("all")){
             jobs = JobData.findAll();
             model.addAttribute("title", "All Jobs");
         }
